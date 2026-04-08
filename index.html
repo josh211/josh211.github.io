@@ -1,478 +1,152 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bioinformatics &amp; Health Informatics | Integrated Informatics Services</title>
-  <meta name="description" content="Servicios integrados de Bioinformática, Informática de Salud y Ciencia de Datos Biomédicos." />
+  <title>Integrated Informatics Service | Center for Collaborative Research in Health Disparities</title>
+  <meta name="description" content="The IIS combines Bioinformatics, Health Informatics and Operational Informatics resources into one Integrated Informatics Service." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- ══════════════════════════════════════════════════════════
-     NAVBAR
-══════════════════════════════════════════════════════════ -->
-<nav class="navbar" role="navigation" aria-label="Navegación principal">
-  <a class="brand" href="#inicio">
-    <div style="width:44px;height:44px;background:rgba(255,255,255,.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;">🧬</div>
-    <div>
-      <strong>IIS</strong>
-      <span>Integrated Informatics Services</span>
-    </div>
+<!-- ── TOP UTILITY BAR ─────────────────────────────────────── -->
+<div class="top-bar">
+  <a href="mailto:rcmi.rcm@upr.edu">
+    ✉ rcmi.rcm@upr.edu
   </a>
-  <button class="nav-toggle" aria-label="Abrir menú" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true');document.getElementById('nav-links').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </button>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#inicio"        class="active">Inicio</a></li>
-    <li><a href="#bioinformatica">Bioinformática</a></li>
-    <li><a href="#health"        >Health Informatics</a></li>
-    <li><a href="#dataScience"   >Data Science</a></li>
-    <li><a href="#equipo"        >Equipo</a></li>
-    <li><a href="#herramientas"  >Herramientas</a></li>
-    <li><a href="#contacto"      >Contacto</a></li>
-  </ul>
-</nav>
+  <span class="sep">|</span>
+  <a href="tel:+17877639401">
+    ✆ (787) 763-9401
+  </a>
+</div>
 
-<!-- ══════════════════════════════════════════════════════════
-     HERO
-══════════════════════════════════════════════════════════ -->
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <div class="hero-badge">Integrated Informatics Services</div>
-    <h1>Bioinformatics &amp;<br/>Health Informatics</h1>
+<!-- ── NAVBAR ──────────────────────────────────────────────── -->
+<header>
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="#" aria-label="RCMi Home">
+      <div class="brand-logo">
+        RCM<span class="orange-dot">i</span>
+      </div>
+      <div class="brand-text">
+        <span class="line1">Center for Collaborative</span>
+        <span class="line2">Research in Health Disparities</span>
+        <span class="line3">University of Puerto Rico Medical Sciences Campus</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About ▾</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ── HERO BANNER ─────────────────────────────────────────── -->
+<div class="hero" role="banner">
+  <div class="hero-wave"></div>
+  <div class="hero-title">
+    <h1>Integrated<br/>Informatics Service</h1>
+  </div>
+  <div class="hero-director">
+    <div class="director-info">
+      <span class="director-name">Abiel Roche-Lima, PhD</span>
+      <span class="director-role">Director</span>
+    </div>
+    <div class="hero-photo-placeholder" aria-label="Photo of Abiel Roche-Lima">👨‍🔬</div>
+  </div>
+</div>
+
+<!-- ── TWO-COLUMN LAYOUT ────────────────────────────────────── -->
+<div class="page-wrap">
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content" id="about">
+
     <p>
-      Combinamos Bioinformática, Informática de Salud y Ciencia de Datos Biomédicos en un
-      servicio integrado para apoyar la investigación y reducir las disparidades en salud.
+      The Integrated Informatics Core combines Bioinformatics, Health Informatics and
+      Operational Informatics resources into one Integrated Informatics Service (IIS).
     </p>
-    <div class="hero-actions">
-      <a href="#bioinformatica" class="btn btn-primary">Explorar Servicios</a>
-      <a href="#contacto"       class="btn btn-outline">Contactar</a>
-    </div>
-  </div>
-</section>
 
-<!-- ══════════════════════════════════════════════════════════
-     ABOUT
-══════════════════════════════════════════════════════════ -->
-<section class="about" id="sobre">
-  <div class="section-inner">
-    <div class="about-grid">
-      <div class="about-text">
-        <h2>¿Qué es el IIS?</h2>
-        <p>
-          El <strong>Integrated Informatics Service (IIS)</strong> consolida los recursos de
-          Bioinformática, Informática de Salud e Informática Operacional en un servicio unificado,
-          brindando apoyo analítico de alto nivel a investigadores y clínicos.
-        </p>
-        <p>
-          Somos la primera unidad de soporte en Bioinformática de la institución y ofrecemos
-          una plataforma robusta para el análisis de datos ómicos, el manejo de encuestas clínicas
-          y la aplicación de inteligencia artificial en ciencias de la salud.
-        </p>
-        <div class="highlight-box">
-          <h4>Nuestra misión</h4>
-          <p>
-            Proveer servicios informáticos de excelencia que impulsen la investigación
-            biomédica y contribuyan a disminuir las disparidades en salud mediante el
-            uso ético e innovador de los datos.
-          </p>
-        </div>
-      </div>
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="num">3</div>
-          <div class="label">Unidades de servicio</div>
-        </div>
-        <div class="stat-card">
-          <div class="num">50+</div>
-          <div class="label">Proyectos apoyados</div>
-        </div>
-        <div class="stat-card">
-          <div class="num">12+</div>
-          <div class="label">Herramientas analíticas</div>
-        </div>
-        <div class="stat-card">
-          <div class="num">NIH</div>
-          <div class="label">Financiamiento federal</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     BIOINFORMATICS
-══════════════════════════════════════════════════════════ -->
-<section class="unit-section svc-blue" id="bioinformatica">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="tag tag-blue">Unidad 1</span>
-      <h2>Bioinformática</h2>
-      <p>
-        La primera unidad de soporte en Bioinformática de la institución, especializada en
-        análisis de datos genómicos, proteómicos y metagenómicos.
-      </p>
-      <div class="divider divider-blue"></div>
-    </div>
-    <div class="unit-layout">
-      <div class="unit-content">
-        <h3>Servicios de Análisis Ómico</h3>
-        <p class="lead">
-          Ofrecemos un amplio portafolio de análisis bioinformáticos para apoyar proyectos
-          de investigación que van desde la secuenciación de nueva generación hasta el
-          análisis de redes metabólicas.
-        </p>
-        <ul class="service-list">
-          <li>Análisis de datos genómicos (DNAseq)</li>
-          <li>Análisis de expresión génica (RNAseq)</li>
-          <li>Análisis metagenómico</li>
-          <li>Análisis de SNPs y variantes</li>
-          <li>Ensamblaje y anotación de genomas</li>
-          <li>Análisis de vías y redes (Pathway)</li>
-          <li>Análisis de proteómica</li>
-          <li>Análisis filogenético</li>
-        </ul>
-      </div>
-      <div class="unit-visual">
-        <div class="feature-card">
-          <div class="feature-icon icon-blue">🧬</div>
-          <div>
-            <h4>Secuenciación de Nueva Generación</h4>
-            <p>Procesamiento y análisis de datos de plataformas Illumina, PacBio y Oxford Nanopore.</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-blue">🔬</div>
-          <div>
-            <h4>Análisis Diferencial</h4>
-            <p>Identificación de genes y proteínas diferencialmente expresados entre condiciones.</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-blue">🌐</div>
-          <div>
-            <h4>Redes y Enriquecimiento</h4>
-            <p>Análisis de enriquecimiento de vías metabólicas (GO, KEGG, Reactome) y redes de interacción proteica.</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-purple">🦠</div>
-          <div>
-            <h4>Microbioma y Metagenómica</h4>
-            <p>Caracterización de comunidades microbianas a partir de datos 16S, ITS y shotgun metagenomics.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     HEALTH INFORMATICS
-══════════════════════════════════════════════════════════ -->
-<section class="unit-section svc-green" id="health" style="background:var(--light)">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="tag tag-green">Unidad 2</span>
-      <h2>Health Informatics</h2>
-      <p>
-        Gestión, captura y análisis de datos clínicos y epidemiológicos para apoyar la
-        investigación en salud pública y atención al paciente.
-      </p>
-      <div class="divider divider-green"></div>
-    </div>
-    <div class="unit-layout reverse">
-      <div class="unit-visual">
-        <div class="feature-card">
-          <div class="feature-icon icon-green">📋</div>
-          <div>
-            <h4>REDCap</h4>
-            <p>Diseño, implementación y soporte de bases de datos y encuestas clínicas con REDCap.</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-green">🔒</div>
-          <div>
-            <h4>Seguridad y Cumplimiento</h4>
-            <p>Manejo de datos bajo estándares HIPAA, IRB y buenas prácticas clínicas (GCP).</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-green">📊</div>
-          <div>
-            <h4>Estadísticas Clínicas</h4>
-            <p>Análisis bioestadístico descriptivo e inferencial para estudios observacionales y clínicos.</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-green">🏥</div>
-          <div>
-            <h4>Datos de Historia Clínica</h4>
-            <p>Extracción, estructuración y análisis de datos de historias clínicas electrónicas (EHR/EMR).</p>
-          </div>
-        </div>
-      </div>
-      <div class="unit-content">
-        <h3>Sistemas de Información en Salud</h3>
-        <p class="lead">
-          Utilizamos REDCap — una aplicación web respaldada por los NIH — para el diseño y
-          manejo de encuestas e instrumentos de captura de datos clínicos de forma segura
-          y eficiente.
-        </p>
-        <ul class="service-list">
-          <li>Diseño de bases de datos clínicas</li>
-          <li>Encuestas en línea (REDCap)</li>
-          <li>Gestión de datos de pacientes</li>
-          <li>Integración con sistemas EHR</li>
-          <li>Bioestadística aplicada</li>
-          <li>Análisis epidemiológico</li>
-          <li>Capacitación en REDCap</li>
-          <li>Soporte para protocolos IRB</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     BIOMEDICAL DATA SCIENCE
-══════════════════════════════════════════════════════════ -->
-<section class="unit-section svc-teal" id="dataScience">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="tag tag-teal">Unidad 3</span>
-      <h2>Biomedical Data Science</h2>
-      <p>
-        Aplicación de Inteligencia Artificial y Machine Learning para el estudio de variaciones
-        en resultados de salud en poblaciones específicas.
-      </p>
-      <div class="divider divider-teal"></div>
-    </div>
-    <div class="unit-layout">
-      <div class="unit-content">
-        <h3>IA &amp; Machine Learning en Salud</h3>
-        <p class="lead">
-          Aplicamos métodos avanzados de aprendizaje automático e inteligencia artificial para
-          analizar grandes volúmenes de datos biomédicos, apoyar diagnósticos y diseñar
-          estrategias de tratamiento personalizadas.
-        </p>
-        <ul class="service-list">
-          <li>Limpieza y curaduría de datos</li>
-          <li>Análisis exploratorio (EDA)</li>
-          <li>Visualizaciones interactivas</li>
-          <li>Modelado predictivo</li>
-          <li>Clasificación y clustering</li>
-          <li>Procesamiento de lenguaje natural (NLP)</li>
-          <li>Deep Learning biomédico</li>
-          <li>Pipelines de datos automatizados</li>
-        </ul>
-      </div>
-      <div class="unit-visual">
-        <div class="feature-card">
-          <div class="feature-icon icon-teal">🤖</div>
-          <div>
-            <h4>Machine Learning</h4>
-            <p>Modelos supervisados y no supervisados para predicción de diagnósticos y estratificación de riesgo.</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-teal">📈</div>
-          <div>
-            <h4>Visualización de Datos</h4>
-            <p>Dashboards interactivos y gráficas avanzadas para comunicar hallazgos a clínicos e investigadores.</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-teal">🧠</div>
-          <div>
-            <h4>Deep Learning</h4>
-            <p>Redes neuronales convolucionales y recurrentes aplicadas a imagen médica y datos longitudinales.</p>
-          </div>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-purple">💬</div>
-          <div>
-            <h4>NLP Clínico</h4>
-            <p>Extracción de información y análisis de notas clínicas con procesamiento de lenguaje natural.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     EQUIPO
-══════════════════════════════════════════════════════════ -->
-<section class="team" id="equipo">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="tag tag-blue">Nuestro Equipo</span>
-      <h2>Investigadores y Personal</h2>
-      <p>Un equipo multidisciplinario comprometido con la excelencia científica y el apoyo a la investigación biomédica.</p>
-      <div class="divider divider-blue"></div>
-    </div>
-    <div class="team-grid">
-      <div class="team-card">
-        <div class="team-avatar av-blue">👩‍🔬</div>
-        <h4>Dra. Ana Rivera</h4>
-        <p class="role">Directora IIS &amp; Bioinformática</p>
-        <span class="unit-tag tag-blue">Bioinformática</span>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar av-green">👨‍💻</div>
-        <h4>Dr. Carlos Méndez</h4>
-        <p class="role">Health Informatics Lead</p>
-        <span class="unit-tag tag-green">Health Informatics</span>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar av-teal">👩‍💻</div>
-        <h4>Dra. Sofía Torres</h4>
-        <p class="role">Data Science &amp; AI Lead</p>
-        <span class="unit-tag tag-teal">Data Science</span>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar av-purple">🧑‍🔬</div>
-        <h4>M.S. Luis Vega</h4>
-        <p class="role">Bioinformático Senior</p>
-        <span class="unit-tag tag-blue">Bioinformática</span>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar av-green">👩‍⚕️</div>
-        <h4>M.S. María Cruz</h4>
-        <p class="role">REDCap &amp; Data Manager</p>
-        <span class="unit-tag tag-green">Health Informatics</span>
-      </div>
-      <div class="team-card">
-        <div class="team-avatar av-teal">👨‍🎓</div>
-        <h4>M.S. Javier Ortiz</h4>
-        <p class="role">ML Engineer</p>
-        <span class="unit-tag tag-teal">Data Science</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     HERRAMIENTAS
-══════════════════════════════════════════════════════════ -->
-<section class="tools" id="herramientas">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="tag tag-blue">Plataformas &amp; Software</span>
-      <h2>Herramientas y Tecnologías</h2>
-      <p>Utilizamos herramientas líderes en la industria y la academia para garantizar análisis reproducibles y de alta calidad.</p>
-      <div class="divider divider-blue"></div>
-    </div>
-    <div class="tools-grid">
-      <div class="tool-card">
-        <div class="tool-icon">🗃️</div>
-        <h4>REDCap</h4>
-        <p>Captura de datos clínicos</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">🐍</div>
-        <h4>Python</h4>
-        <p>Análisis y Machine Learning</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">📊</div>
-        <h4>R / Bioconductor</h4>
-        <p>Bioestadística y genómica</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">🧬</div>
-        <h4>GATK</h4>
-        <p>Variant calling</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">🔭</div>
-        <h4>Galaxy</h4>
-        <p>Flujos bioinformáticos</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">⚡</div>
-        <h4>Nextflow</h4>
-        <p>Pipelines reproducibles</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">🧠</div>
-        <h4>TensorFlow / PyTorch</h4>
-        <p>Deep Learning</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">📉</div>
-        <h4>DESeq2 / edgeR</h4>
-        <p>Expresión diferencial</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">🌐</div>
-        <h4>Cytoscape</h4>
-        <p>Visualización de redes</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">🐋</div>
-        <h4>Docker / Singularity</h4>
-        <p>Contenedores reproducibles</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">☁️</div>
-        <h4>HPC / Cloud</h4>
-        <p>Cómputo de alto rendimiento</p>
-      </div>
-      <div class="tool-card">
-        <div class="tool-icon">📂</div>
-        <h4>QIIME 2</h4>
-        <p>Microbioma y 16S</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     CONTACT
-══════════════════════════════════════════════════════════ -->
-<section class="contact" id="contacto">
-  <div class="section-inner">
-    <h2>¿Necesitas apoyo en tu investigación?</h2>
     <p>
-      Nuestro equipo está disponible para consultas, colaboraciones y servicios de análisis.
-      Contáctanos para discutir cómo podemos apoyar tu proyecto.
+      The <strong>Health Informatics</strong> unit uses the REDCap software, an NIH-supported
+      web application, for building and managing online surveys and research databases.
+      IIS currently supports more than 47 REDCap datasets, with approximately 291 users.
+      The staff also provides Biomedical Data Science (DS) services, through the phases of
+      a DS project lifecycle. These phases include data understanding, data wrangling
+      (pre-processing), model planning, models building, and communication results. To
+      develop these DS projects, we implement new software and databases tools. We also
+      apply Artificial Intelligence / Machine Learning for developing the predictive models
+      and other analysis. We have published more than ten papers since 2017.
     </p>
-    <div>
-      <a href="mailto:iis@rcm.upr.edu" class="btn btn-primary">Enviar solicitud</a>
-    </div>
-    <div class="contact-cards">
-      <div class="contact-card">
-        <div class="ci">📧</div>
-        <h4>Email</h4>
-        <p>iis@rcm.upr.edu</p>
-      </div>
-      <div class="contact-card">
-        <div class="ci">📍</div>
-        <h4>Ubicación</h4>
-        <p>UPR — Recinto de Ciencias Médicas, San Juan, PR</p>
-      </div>
-      <div class="contact-card">
-        <div class="ci">🕐</div>
-        <h4>Horario</h4>
-        <p>Lunes – Viernes, 8:00 am – 5:00 pm</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ══════════════════════════════════════════════════════════
-     FOOTER
-══════════════════════════════════════════════════════════ -->
-<footer>
+    <p>
+      The <strong>Bioinformatics</strong> unit is the first Bioinformatics support service
+      in the institution. The range of services available include data analytics for
+      genomics and proteomics analysis; DNAseq and RNAseq analysis; metagenomic analysis;
+      SNP analysis; genome assembly and annotation; pathway and network enrichment analysis,
+      and phylogeny analysis.
+    </p>
+
+    <p>
+      The <strong>Biomedical Data Science</strong> unit applies Artificial Intelligence (AI)
+      and Machine Learning (ML) methods to examine health-related outcome variations among
+      specific population. Services offered include data cleaning, data wrangling,
+      exploratory analysis, visualizations, and predictive modeling to support research on
+      patient diagnoses and treatment strategies.
+    </p>
+
+    <!-- IIS Services Box -->
+    <div class="services-box" id="services">
+      <div class="services-box-header">IIS Services and Resources</div>
+      <ul class="services-box-links">
+        <li><a href="#services-desc">IIS Services Description</a></li>
+        <li><a href="#tools">Tools, Equipments &amp; Softwares</a></li>
+        <li><a href="#repository">Repository of Resources</a></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" aria-label="IIS Staff">
+    <div class="sidebar-title">IIS Staff</div>
+
+    <div class="staff-member">
+      <div class="staff-photo-placeholder" aria-label="Photo of Brenda G. Nieves-Rodríguez">👩‍💼</div>
+      <div class="staff-name">Brenda G. Nieves-Rodríguez, BBA</div>
+      <div class="staff-role">System Programmer II</div>
+    </div>
+
+    <div class="staff-member">
+      <div class="staff-photo-placeholder" aria-label="Photo of Joshua Meléndez">👨‍💻</div>
+      <div class="staff-name">Joshua Meléndez</div>
+      <div class="staff-role">AI Specialist / IT Project Manager</div>
+    </div>
+
+    <div class="staff-member">
+      <div class="staff-photo-placeholder" aria-label="Photo of Staff Member">👩‍🔬</div>
+      <div class="staff-name">María L. Torres, MS</div>
+      <div class="staff-role">Bioinformatics Analyst</div>
+    </div>
+
+    <div class="staff-member">
+      <div class="staff-photo-placeholder" aria-label="Photo of Staff Member">👨‍🎓</div>
+      <div class="staff-name">Carlos R. Vega, MS</div>
+      <div class="staff-role">Data Science Specialist</div>
+    </div>
+
+  </aside>
+
+</div><!-- /.page-wrap -->
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer id="contact">
   <p>
-    &copy; 2024 Integrated Informatics Services (IIS) — Center for Collaborative Research in Health Disparities
-    &nbsp;|&nbsp;
-    <a href="https://rcm.upr.edu">UPR Recinto de Ciencias Médicas</a>
-    &nbsp;|&nbsp;
-    Financiado por el NIH/NIMHD RCMI
+    &copy; 2024 Center for Collaborative Research in Health Disparities &nbsp;|&nbsp;
+    University of Puerto Rico Medical Sciences Campus &nbsp;|&nbsp;
+    Funded by NIH/NIMHD RCMI Grant &nbsp;|&nbsp;
+    <a href="mailto:rcmi.rcm@upr.edu">rcmi.rcm@upr.edu</a>
   </p>
 </footer>
 
